@@ -209,7 +209,6 @@
   };
 
   const getCurrentVideoDetail = () => {
-    if(currentVideoData['title'] && currentVideoData['thumbnail']) return;
 
     const title = document.querySelector(
       '.title > .ytd-video-primary-info-renderer'
