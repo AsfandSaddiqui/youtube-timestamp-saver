@@ -1,3 +1,11 @@
+// Listen for messages from the background script
+chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
+  if (message.type === 'refreshOptionsPage') {
+    // Reload the options page to fetch the latest data from sync storage
+    location.reload();
+  }
+});
+
 document.addEventListener('DOMContentLoaded', async () => {
   const bookmarks = [];
   let parseBookmark = {};
@@ -77,8 +85,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
       }
     });
+    console.log(bookmarks);
     renderBookmarks(bookmarks);
-
   };
 
   const handleSearch = () => {
