@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background: #e8ebf3;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.name {
+  width: 35%;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  background: #fafafa;
+  border: 1px solid transparent;
+  margin-right: 15px;
+  color: #777;
+  border-radius: 50px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 99;
+  max-width: 500px;
+  margin-bottom: 10px;
+}
+
+.name:focus {
+  background: #fcfcfc;
+  border: 1px solid #ddd;
+}
+
+
+.bookmarks {
+  max-width: 1600px;
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  grid-gap: 15px;
+}
+
+.bookmark {
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  max-width: 600px;
+  margin-bottom: 7px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 1560px) {
+  .bookmarks { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 1024px) {
+  .bookmarks { grid-template-columns: repeat(1, 1fr); }
+}
+
+/* -------------------------------------- */
+
+/* Reset some default styles for better consistency */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Styling for the horizontal card */
+.card {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background-color: white;
+  height: 150px;
+}
+.card:hover {
+  box-shadow: 1px 2px 4px 0px #d1d1d1;
+  cursor: pointer;
+}
+
+.card img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.video-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #666;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #00bba9;
+  border: none;
+  border-radius: 30px;
+  width: 90px;
+  padding: 14px;
+  font-size: 12px;
+  color: #141b22;
+  font-family: 'Poppins', sans-serif;
+  color:white
+}
+
+button:hover {
+  cursor: pointer;
+}

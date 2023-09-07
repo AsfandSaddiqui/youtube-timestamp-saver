@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/*Dialog Styles*/
+dialog {
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 12px 48px rgba(29, 5, 64, 0.32);
+  animation: fadeIn 1s ease both;
+  width: 100%;
+  height: 100%;
+}
+
+.name {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  background: #fafafa;
+  border: 1px solid transparent;
+  margin-right: 15px;
+  color: #777;
+  border-radius: 50px;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 99;
+}
+
+.name:focus {
+  background: #fcfcfc;
+  border: 1px solid #ddd;
+}
+
+button.accept {
+  background-color: #44f1a6;
+  border: none;
+  border-radius: 30px;
+  width: 90px;
+  padding: 14px;
+  font-size: 12px;
+  color: #141b22;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.accept:hover {
+  cursor: pointer;
+}
+
+.input {
+  background-image: linear-gradient(#fdfeff, #deeeff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
+  max-width: 600px;
+  height: 100px;
+  padding-top: 2rem;
+  color:#141b22;
+  border-radius: 20px;
+}
+
+.bookmark-btn {
+  width: 34px !important;
+  height: 34px !important;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  height: 100% !important;
+}
