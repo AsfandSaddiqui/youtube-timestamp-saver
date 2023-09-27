@@ -1,8 +1,8 @@
 {
     "name": "Youtube Timestamp Saver",
     "version": "0.1.0",
-    "description": "Saving timestamps in Youtube videos",
-    "permissions": ["storage", "tabs", "scripting"],
+    "description": "It helps you save timestamps in Youtube videos",
+    "permissions": ["storage", "tabs"],
     "host_permissions": ["https://*.youtube.com/*"],
     "background": {
       "service_worker": "background.js",
@@ -38,7 +38,7 @@
         "32": "assets/ext-icon.png",
         "128": "assets/delete.png"
       },
-      "default_title": "My YT Bookmarks",
+      "default_title": "My Youtube Bookmarks",
       "default_popup": "popup.html"
     },
     "manifest_version": 3
